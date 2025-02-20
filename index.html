@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Strategy Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #222; color: white; }
+        #game-container { max-width: 600px; margin: auto; padding: 20px; border: 2px solid white; background: #333; }
+        button { margin: 5px; padding: 10px; cursor: pointer; }
+        .country { display: inline-block; margin: 10px; padding: 10px; background: navy; color: white; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<h1>World Strategy Game</h1>
+<div id="game-container">
+    <p><strong>Your Country: India</strong></p>
+    <p>Money: <span id="money">1000</span> 💰</p>
+    <p>Fleet Size: <span id="fleet">0</span> 🚢</p>
+    
+    <button onclick="buildShip()">Build Ship (Cost: 200)</button>
+    <button onclick="endTurn()">End Turn</button>
+
+    <h2>Enemy Countries</h2>
+    <div id="enemies"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
